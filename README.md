@@ -1,2 +1,0 @@
-# Canvas
-Trabajos utilizando Canvas
