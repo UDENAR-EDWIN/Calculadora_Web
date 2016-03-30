@@ -4,48 +4,50 @@
   <meta charset="UTF-8">
   <title>Calculadora</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/js/calculadora.js"></script>
 </head>
 <body>
   <div class="calculadora">
-    <div class="result"></div>
+    <div class="result" id="resultado"></div>
     <table class="tsimb">
       <tr>
-        <td><input style="background-image: url(assets/images/delete.png);" class="bt-image" type="button" id="" class="dbutton"></td>
-        <td><input type="button" value="(" id="" class="dbutton"></td>
-        <td><input type="button" value=")" id="" class="dbutton"></td>
-        <td><input style="background-image: url(assets/images/root.png);" class="bt-image" type="button" id="" class="dbutton"></td>
-        <td><input type="button" value="Sen" id="" class="dbutton"></td>
+        <td><input style="background-image: url(assets/images/delete.png);" class="bt-image dbutton" type="button"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="(" id="(" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value=")" id=")" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" style="background-image: url(assets/images/root.png);" class="bt-image dbutton" type="button" id="r"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="Sen" id="s" class="dbutton"></td>
       </tr>
       <tr>
-        <td><input type="button" value="7" id="" class="dbutton"></td>
-        <td><input type="button" value="8" id="" class="dbutton"></td>
-        <td><input type="button" value="9" id="" class="dbutton"></td>
-        <td><input type="button" value="Cos" id="" class="dbutton"></td>
-        <td><input type="button" value="Tan" id="" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="7" id="7" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="8" id="8" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="9" id="9" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="Cos" id="c" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="Tan" id="t" class="dbutton"></td>
       </tr>
       <tr>
-        <td><input type="button" value="4" id="" class="dbutton"></td>
-        <td><input type="button" value="5" id="" class="dbutton"></td>
-        <td><input type="button" value="6" id="" class="dbutton"></td>
-        <td><input type="button" value="x" id="" class="dbutton"></td>
-        <td><input type="button" value="/" id="" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="4" id="4" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="5" id="5" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="6" id="6" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="x" id="x" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="/" id="/" class="dbutton"></td>
       </tr>
       <tr>
-        <td><input type="button" value="1" id="" class="dbutton"></td>
-        <td><input type="button" value="2" id="" class="dbutton"></td>
-        <td><input type="button" value="3" id="" class="dbutton"></td>
-        <td><input type="button" value="+" id="" class="dbutton"></td>
-        <td><input type="button" value="-" id="" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="1" id="1" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="2" id="2" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="3" id="3" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="+" id="+" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="-" id="-" class="dbutton"></td>
       </tr>
       <tr>
-        <td><input type="button" value="0" id="" class="dbutton"></td>
-        <td><input type="button" value="." id="" class="dbutton"></td>
-        <td><input type="button" value="%" id="" class="dbutton"></td>
-        <td><input type="button" value="C" id="" class="dbutton"></td>
-        <td><input type="button" value="=" id="" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="0" id="0" class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="." id="." class="dbutton"></td>
+        <td><input onclick="concatenar(this.id)" type="button" value="%" id="%" class="dbutton"></td>
+        <td><input type="button" value="C" class="dbutton"></td>
+        <td><input type="button" value="=" class="dbutton"></td>
       </tr>
     </table>
   </div>
+  <input style="background-image: url(assets/images/right-arrow.png);" class="bt-image bt-more" type="button"><br>
   <footer>
     <ul>
       <li class="social-network"><a href="https://www.facebook.com/EDWINIMP3"><img src="assets/images/facebook.png"></a></li>

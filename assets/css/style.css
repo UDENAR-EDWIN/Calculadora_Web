@@ -21,6 +21,11 @@ div {
   height: 20%;
   margin: 20px;
   background-color: #172d45;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: right;
 }
 
 .tsimb {
@@ -80,4 +85,10 @@ a>img {
   font-family: sans-serif;
   font-size: 20px;
   color: #150524;
+}
+
+.bt-more {
+  background-color: #651616;
+  border-radius: 100%;
+  margin-left: 95%;
 }
