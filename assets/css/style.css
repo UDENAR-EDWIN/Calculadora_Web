@@ -12,6 +12,7 @@ div {
   width: 400px;
   margin: auto;
   margin-top: 80px;
+  margin-bottom: 30px;
   border-radius: 10px;
   background-color: #bdbfdf;
 }
@@ -60,7 +61,7 @@ footer {
 
 a>img {
   width: 40px;
-  margin: 5px;
+  margin: 5px 2px 0 0;
 }
 
 .social-network {
@@ -73,4 +74,10 @@ a>img {
   width:65px;
   border-radius: 5px;
   background-position:center;
+}
+
+.developer-info {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #150524;
 }
