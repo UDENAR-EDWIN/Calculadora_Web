@@ -16,17 +16,20 @@ $(document).on("ready",function(){
   for(var i =0; i<=(a/40); i++){
     lienzo.moveTo(x,0);
     lienzo.lineTo(x,l);
-    lienzo.fillText(num+"",x,(l/2)+20);
+    if(num != 0)lienzo.fillText(num+"",x-5,(l/2)+20);
     x += 40;
     num += 1;
   }
   lienzo.closePath();
   lienzo.stroke();
+  num = 6;
 
   lienzo.beginPath();
   for(var i =0; i<=(l/44); i++){
     lienzo.moveTo(0,y);
     lienzo.lineTo(a,y);
+    if(num != 0)lienzo.fillText(num+"",(a/2)+20,y+5);
+    num -= 1;
     y += 44;
   }
   lienzo.closePath();
