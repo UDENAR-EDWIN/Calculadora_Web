@@ -10,11 +10,19 @@ div {
 .calculadora {
   height: 530px;
   width: 400px;
-  margin: auto;
+  margin-left: 36%;
   margin-top: 80px;
   margin-bottom: 30px;
   border-radius: 10px;
   background-color: #bdbfdf;
+  display: inline-block;
+}
+
+.plano-cartesiano {
+  margin-top: 80px;
+  float: right;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
 }
 
 .result {
@@ -90,5 +98,37 @@ a>img {
 .bt-more {
   background-color: #651616;
   border-radius: 100%;
-  margin-left: 95%;
+  vertical-align: top;
+  margin-top: 22%;
+  display: inline-block;
+}
+/*------------------------------------------------------------------------------
+Class for Animation*/
+.translate {
+  animation-name: load;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+.appear {
+  animation-name: emerge;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+/*------------------------------------------------------------------------------
+Animations*/
+@keyframes load{
+  from{
+    margin-left: 36%;
+  }
+  to{
+    margin-left: 21%;
+  }
+}
+
+@keyframes emerge{
+  to{
+    margin-right: 15%;
+    border: 1px solid black;
+    background-color: rgb(234, 241, 247);
+  }
 }
